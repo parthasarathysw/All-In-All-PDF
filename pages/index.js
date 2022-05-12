@@ -3,61 +3,69 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          Powered by{' '}
+          <span className="navbar-toggler-icon" />
+        </button>
+        <a className="navbar-brand" href="#">
+          AIA PDF
         </a>
-      </footer>
-    </div>
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
+                Split PDF
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Merge PDF
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link disabled"
+                href="#"
+                tabIndex={-1}
+                aria-disabled="true"
+              >
+                PDF to Word
+              </a>
+            </li>
+          </ul>
+          <ul className="navbar-nav mw-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a
+                className="nav-link disabled"
+                href="#"
+                tabIndex={-1}
+                aria-disabled="true"
+              >
+                Sign Up
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link disabled"
+                href="#"
+                tabIndex={-1}
+                aria-disabled="true"
+              >
+                Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
