@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Nav() {
   return (
@@ -15,20 +16,26 @@ export default function Nav() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <a className="navbar-brand" href="#">
-          AIA PDF
-        </a>
+        <Link href="/" className="navbar-brand">
+          <a className="navbar-brand" href="#">
+            AIA PDF
+          </a>
+        </Link>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Split PDF
-              </a>
+              <Link href="/splitpdf">
+                <a className="nav-link active" aria-current="page">
+                  Split PDF
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Merge PDF
-              </a>
+              <Link href="/mergepdf">
+                <a className="nav-link" aria-current="page">
+                  Merge PDF
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a

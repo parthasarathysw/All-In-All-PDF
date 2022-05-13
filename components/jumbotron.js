@@ -1,3 +1,5 @@
+import styles from '../styles/Home.module.css';
+
 export default function Jumbotron() {
   return (
     <div className="px-5 mb-4 bg-light rounded-3" className={styles.jumbotron}>
